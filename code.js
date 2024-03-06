@@ -28,8 +28,8 @@ function quicksort(array)
         //if the pivot position is less than hi, then it can be sorted. 
         if(pivotIndex < hi)
         {
-            unsorted[top++] = pivotIndex+1;
-            unsorted[top++] = hi;
+            unsorted[++top] = pivotIndex+1;
+            unsorted[++top] = hi;
         }
 
     }
