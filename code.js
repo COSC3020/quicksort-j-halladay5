@@ -1,5 +1,9 @@
 function quicksort(array)
 {
+    if(array.length < 2)
+    {
+        return array;
+    }
     /*to make quicksort iterative, you need to simulate the recursive stack.
       This array will work as the recursive stack that holds the unsorted sections hi and low 
       bounds of my array.*/ 
